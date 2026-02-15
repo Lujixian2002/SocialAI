@@ -1,0 +1,11 @@
+
+elasticsearch:
+  address: "http://35.185.146.10:9200"
+  username: "ljx"
+  password: "ljx021112"
+
+gcs:
+  bucket: "social-ai"
+
+token:
+  secret: "secret"
