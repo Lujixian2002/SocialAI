@@ -15,7 +15,7 @@ import LogoutIcon from "@mui/icons-material/Logout";
 
 const pages = ["Create", "Collection"];
 
-function ResponsiveAppBar(props) {
+function TopNavigationBar(props) {
   const { isLoggedIn, handleLogout } = props;
 
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -138,4 +138,4 @@ function ResponsiveAppBar(props) {
     </AppBar>
   );
 }
-export default ResponsiveAppBar;
+export default TopNavigationBar;

@@ -33,7 +33,7 @@ const wrapperStyle = {
   overflow: "auto",
 };
 
-function PhotoGallery(props) {
+function PostPhotoGallery(props) {
   const [images, setImages] = useState(props.images);
   const [index, setIndex] = useState(-1);
 
@@ -134,7 +134,7 @@ function PhotoGallery(props) {
   );
 }
 
-PhotoGallery.propTypes = {
+PostPhotoGallery.propTypes = {
   images: PropTypes.arrayOf(
     PropTypes.shape({
       postId: PropTypes.string.isRequired,
@@ -148,4 +148,4 @@ PhotoGallery.propTypes = {
   ).isRequired,
 };
 
-export default PhotoGallery;
+export default PostPhotoGallery;

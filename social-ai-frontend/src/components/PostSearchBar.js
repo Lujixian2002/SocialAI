@@ -5,7 +5,7 @@ import { SEARCH_KEY } from "../constants";
 
 const { Search } = Input;
 
-function SearchBar(props) {
+function PostSearchBar(props) {
   const [searchType, setSearchType] = useState(SEARCH_KEY.all);
   const [error, setError] = useState("");
 
@@ -57,4 +57,4 @@ function SearchBar(props) {
   );
 }
 
-export default SearchBar;
+export default PostSearchBar;

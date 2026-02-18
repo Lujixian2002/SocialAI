@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import ResponsiveAppBar from "./ResponsiveAppBar";
-import Main from "./Main";
+import TopNavigationBar from "./TopNavigationBar";
+import AppRoutes from "./AppRoutes";
 
 import { TOKEN_KEY } from "../constants";
 
-function App() {
+function AppShell() {
   const [isLoggedIn, setIsLoggedIn] = useState(
     localStorage.getItem(TOKEN_KEY) ? true : false
   );
@@ -23,10 +23,10 @@ function App() {
 
   return (
     <div className="App">
-      <ResponsiveAppBar isLoggedIn={isLoggedIn} handleLogout={logout} />
-      <Main isLoggedIn={isLoggedIn} handleLoggedIn={loggedIn} />
+      <TopNavigationBar isLoggedIn={isLoggedIn} handleLogout={logout} />
+      <AppRoutes isLoggedIn={isLoggedIn} handleLoggedIn={loggedIn} />
     </div>
   );
 }
 
-export default App;
+export default AppShell;

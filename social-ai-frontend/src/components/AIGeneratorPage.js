@@ -47,7 +47,7 @@ const HeaderContainer = styled.div`
   align-items: center;
 `;
 
-export default function Landing() {
+export default function AIGeneratorPage() {
   const [index, setIndex] = useState(-1);
   const [inputValue, setInputValue] = useState(""); // State to store the input value
   const [isGeneratingImage, setIsGeneratingImage] = useState(false);

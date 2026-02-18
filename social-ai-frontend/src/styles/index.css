@@ -2,10 +2,10 @@
 @import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 @import "~antd/dist/antd.css";
-@import "./Login.css";
-@import "./Register.css";
-@import "./SearchBar.css";
-@import "./Collection.css";
+@import "./login.css";
+@import "./register.css";
+@import "./post-search-bar.css";
+@import "./post-collection-page.css";
 
 body {
   margin: 0;

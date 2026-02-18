@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Tabs, message, Row, Col } from "antd";
 import axios from "axios";
 
-import SearchBar from "./SearchBar";
+import PostSearchBar from "./PostSearchBar";
 import { SEARCH_KEY, BASE_URL, TOKEN_KEY } from "../constants";
-import PhotoGallery from "./PhotoGallery";
-import CreatePostButton from "./CreatePostButton";
+import PostPhotoGallery from "./PostPhotoGallery";
+import CreatePostModalButton from "./CreatePostModalButton";
 
 const { TabPane } = Tabs;
 
-function Collection(props) {
+function PostCollectionPage(props) {
   const [posts, setPosts] = useState([]);
   const [activeTab, setActiveTab] = useState("image");
   const [searchOption, setSearchOption] = useState({
@@ -79,7 +79,7 @@ function Collection(props) {
         };
       });
 
-      return <PhotoGallery images={imageArr} />;
+      return <PostPhotoGallery images={imageArr} />;
     } else if (type === "video") {
       filtered = posts.filter((post) => post.type === "video");
       if (!filtered || filtered.length === 0) {
@@ -105,11 +105,11 @@ function Collection(props) {
     }, 3000);
   };
 
-  const operations = <CreatePostButton onShowPost={showPost} />;
+  const operations = <CreatePostModalButton onShowPost={showPost} />;
 
   return (
     <div className="home">
-      <SearchBar handleSearch={handleSearch} />
+      <PostSearchBar handleSearch={handleSearch} />
       <div className="display">
         <Tabs
           onChange={(key) => setActiveTab(key)}
@@ -129,4 +129,4 @@ function Collection(props) {
   );
 }
 
-export default Collection;
+export default PostCollectionPage;

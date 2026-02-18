@@ -1,0 +1,53 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.9.3
+2 info using node@v22.18.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/lujixian/Projects/LaiOffer/SocialAI/social-ai_frontend/.npmrc
+5 silly config load:file:/Users/lujixian/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--registry" "https://registry.npmjs.org" "--cache" ".npm-cache" "--package-lock" "false"
+9 verbose logfile logs-max:10 dir:/Users/lujixian/Projects/LaiOffer/SocialAI/social-ai_frontend/.npm-cache/_logs/2026-02-18T05_47_42_795Z-
+10 verbose logfile /Users/lujixian/Projects/LaiOffer/SocialAI/social-ai_frontend/.npm-cache/_logs/2026-02-18T05_47_42_795Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest @emotion/react@^11.13.3
+15 silly packumentCache full:https://registry.npmjs.org/@emotion%2freact cache-miss
+16 http fetch GET https://registry.npmjs.org/@emotion%2freact attempt 1 failed with ENOTFOUND
+17 http fetch GET https://registry.npmjs.org/@emotion%2freact attempt 2 failed with ENOTFOUND
+18 http fetch GET https://registry.npmjs.org/@emotion%2freact attempt 3 failed with ENOTFOUND
+19 silly fetch manifest @emotion/styled@^11.13.0
+20 silly packumentCache full:https://registry.npmjs.org/@emotion%2fstyled cache-miss
+21 http fetch GET https://registry.npmjs.org/@emotion%2fstyled attempt 1 failed with ENOTFOUND
+22 http fetch GET https://registry.npmjs.org/@emotion%2fstyled attempt 2 failed with ENOTFOUND
+23 http fetch GET https://registry.npmjs.org/@emotion%2fstyled attempt 3 failed with ENOTFOUND
+24 silly fetch manifest @mui/icons-material@^6.1.7
+25 silly packumentCache full:https://registry.npmjs.org/@mui%2ficons-material cache-miss
+26 http fetch GET https://registry.npmjs.org/@mui%2ficons-material attempt 1 failed with ENOTFOUND
+27 http fetch GET https://registry.npmjs.org/@mui%2ficons-material attempt 2 failed with ENOTFOUND
+28 http fetch GET https://registry.npmjs.org/@mui%2ficons-material attempt 3 failed with ENOTFOUND
+29 silly fetch manifest @mui/material@^6.1.7
+30 silly packumentCache full:https://registry.npmjs.org/@mui%2fmaterial cache-miss
+31 http fetch GET https://registry.npmjs.org/@mui%2fmaterial attempt 1 failed with ENOTFOUND
+32 http fetch GET https://registry.npmjs.org/@mui%2fmaterial attempt 2 failed with ENOTFOUND
+33 http fetch GET https://registry.npmjs.org/@mui%2fmaterial attempt 3 failed with ENOTFOUND
+34 silly fetch manifest @mui/styled-engine-sc@^6.1.7
+35 silly packumentCache full:https://registry.npmjs.org/@mui%2fstyled-engine-sc cache-miss
+36 http fetch GET https://registry.npmjs.org/@mui%2fstyled-engine-sc attempt 1 failed with ENOTFOUND
+37 http fetch GET https://registry.npmjs.org/@mui%2fstyled-engine-sc attempt 2 failed with ENOTFOUND
+38 http fetch GET https://registry.npmjs.org/@mui%2fstyled-engine-sc attempt 3 failed with ENOTFOUND
+39 silly fetch manifest @testing-library/jest-dom@^5.17.0
+40 silly packumentCache full:https://registry.npmjs.org/@testing-library%2fjest-dom cache-miss
+41 http fetch GET https://registry.npmjs.org/@testing-library%2fjest-dom attempt 1 failed with ENOTFOUND
+42 http fetch GET https://registry.npmjs.org/@testing-library%2fjest-dom attempt 2 failed with ENOTFOUND
+43 http fetch GET https://registry.npmjs.org/@testing-library%2fjest-dom attempt 3 failed with ENOTFOUND
+44 silly fetch manifest @testing-library/react@^13.4.0
+45 silly packumentCache full:https://registry.npmjs.org/@testing-library%2freact cache-miss
+46 http fetch GET https://registry.npmjs.org/@testing-library%2freact attempt 1 failed with ENOTFOUND
+47 http fetch GET https://registry.npmjs.org/@testing-library%2freact attempt 2 failed with ENOTFOUND
+48 http fetch GET https://registry.npmjs.org/@testing-library%2freact attempt 3 failed with ENOTFOUND
+49 silly fetch manifest @testing-library/user-event@^13.5.0
+50 silly packumentCache full:https://registry.npmjs.org/@testing-library%2fuser-event cache-miss
+51 http fetch GET https://registry.npmjs.org/@testing-library%2fuser-event attempt 1 failed with ENOTFOUND
+52 http fetch GET https://registry.npmjs.org/@testing-library%2fuser-event attempt 2 failed with ENOTFOUND

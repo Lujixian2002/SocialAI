@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { Modal, Button, message } from "antd";
 import axios from "axios";
 
-import { PostForm } from "./PostForm";
+import { CreatePostForm } from "./CreatePostForm";
 import { BASE_URL, TOKEN_KEY } from "../constants";
 
-class CreatePostButton extends Component {
+class CreatePostModalButton extends Component {
   state = {
     visible: false,
     confirmLoading: false,
@@ -87,10 +87,10 @@ class CreatePostButton extends Component {
           confirmLoading={confirmLoading}
           onCancel={this.handleCancel}
         >
-          <PostForm ref={(refInstance) => (this.postForm = refInstance)} />
+          <CreatePostForm ref={(refInstance) => (this.postForm = refInstance)} />
         </Modal>
       </div>
     );
   }
 }
-export default CreatePostButton;
+export default CreatePostModalButton;

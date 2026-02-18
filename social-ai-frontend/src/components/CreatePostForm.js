@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import { Form, Upload, Input } from "antd";
 import { InboxOutlined } from "@ant-design/icons";
 
-export const PostForm = forwardRef((props, formRef) => {
+export const CreatePostForm = forwardRef((props, formRef) => {
   const formItemLayout = {
     labelCol: { span: 6 },
     wrapperCol: { span: 14 },
@@ -50,4 +50,3 @@ export const PostForm = forwardRef((props, formRef) => {
     </Form>
   );
 });
-

@@ -3,10 +3,10 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 import Login from "./Login";
 import Register from "./Register";
-import Collection from "./Collection";
-import Landing from "./Landing";
+import PostCollectionPage from "./PostCollectionPage";
+import AIGeneratorPage from "./AIGeneratorPage";
 
-function Main(props) {
+function AppRoutes(props) {
   const { isLoggedIn, handleLoggedIn } = props;
 
   // auth gating
@@ -24,11 +24,11 @@ function Main(props) {
   };
 
   const showLanding = () => {
-    return isLoggedIn ? <Landing /> : <Navigate to="/login" />;
+    return isLoggedIn ? <AIGeneratorPage /> : <Navigate to="/login" />;
   };
 
   const showCollection = () => {
-    return isLoggedIn ? <Collection /> : <Navigate to="/login" />;
+    return isLoggedIn ? <PostCollectionPage /> : <Navigate to="/login" />;
   };
 
   return (
@@ -44,4 +44,4 @@ function Main(props) {
   );
 }
 
-export default Main;
+export default AppRoutes;
